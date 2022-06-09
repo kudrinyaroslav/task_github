@@ -11,10 +11,12 @@ and get them using easy way through browser
 
 curl http://IP_Address:ingress-nginx-controller_NodePort/add -X POST -d '{"city":"New-York"}' -H 'Content-Type: application/json'
 
-# to get IP Address look at you cluster IP
-# to get ingress-nginx-controller NodePort in cluster do following kubectl get svc -n ingress-nginx
 
 
 * To get city list:
 
 curl http://IP_Address:ingress-nginx-controller_NodePort/all
+
+
+* to get IP Address look at you cluster IP
+* to get ingress-nginx-controller NodePort in cluster do following kubectl get svc -n ingress-nginx
